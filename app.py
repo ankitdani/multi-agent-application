@@ -8,7 +8,8 @@ def index():
         # Handle form submission here
         job_role = request.form['job_role']
         years_of_experience = request.form['years_of_experience']
-        return f'Job Role: {job_role}, Years of Experience: {years_of_experience}'
+        location = request.form['location']
+        return f'Job Role: {job_role}, Years of Experience: {years_of_experience}, Location: {location}'
     return render_template('index.html')
 
 if __name__ == '__main__':
